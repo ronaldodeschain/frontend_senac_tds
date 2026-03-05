@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor dos Anéis - Cadastro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- VLIBRAS -->
+      <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+          </div>
+      <!-- JS DO VLIBRAS -->
+     
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+      <!-- FIM DO VLIBRAS -->
+    <!-- Header igual ao Index -->
+    <header>
+        <h1>Junte-se à Sociedade</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Receba Novidades da Terra Média</h2>
+        <form id="cadastroForm">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" maxlength="14" required>
+                <span class="error-msg"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" maxlength="15" required>
+                <span class="error-msg"></span>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <!-- Footer e VLibras iguais ao Index -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#">Instagram</a> <a href="#">Twitter</a>
+            </div>
+            <div class="wiremap">
+                <ul>
+                    <li><a href="index.html">Voltar ao Início</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 Projeto Terra Média.</p>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras().Widget('https://vlibras.gov.br/app');</script>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

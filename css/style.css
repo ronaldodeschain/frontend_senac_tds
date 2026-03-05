@@ -1,0 +1,129 @@
+/* css/style.css */
+:root {
+    --primary-color: #d4af37; /* Dourado do Anel */
+    --bg-color: #1a1a1a;
+    --text-color: #f5f5f5;
+    --secondary-bg: #2c2c2c;
+    --font-main: 'Cinzel', serif; /* Fonte estilo fantasia (importar no HTML) */
+    --font-body: 'Lato', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Nav */
+header {
+    background-color: #000;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 { font-family: var(--font-main); color: var(--primary-color); }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover { color: var(--primary-color); }
+
+/* Main Content */
+main { flex: 1; padding: 2rem; max-width: 1200px; margin: 0 auto; width: 100%; }
+
+h2 { color: var(--primary-color); font-family: var(--font-main); margin-bottom: 1rem; border-bottom: 1px solid #444; padding-bottom: 0.5rem; }
+
+/* Footer */
+footer {
+    background-color: #000;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.social-links a { color: var(--primary-color); margin: 0 10px; text-decoration: none; }
+.wiremap ul { list-style: none; }
+.wiremap a { color: #aaa; text-decoration: none; font-size: 0.9rem; }
+
+/* Componentes Específicos */
+
+/* Carrossel (Index) */
+.carousel { position: relative; max-width: 800px; margin: 0 auto 2rem; overflow: hidden; border-radius: 8px; border: 1px solid var(--primary-color); }
+.carousel-inner { display: flex; transition: transform 0.5s ease; }
+.carousel-item { min-width: 100%; height: 400px; background-color: #333; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: #555; }
+.carousel-btn { position: absolute; top: 50%; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: #fff; border: none; padding: 1rem; cursor: pointer; }
+.prev { left: 0; } .next { right: 0; }
+
+/* Produtos (Index) */
+.products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+.product-card { background: var(--secondary-bg); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid #444; }
+.product-card img { max-width: 100%; height: auto; border-radius: 4px; }
+
+/* Apresentação (Index) */
+.presentation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+.presentation-card { background: var(--secondary-bg); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-color); }
+.presentation-card h3 { color: var(--primary-color); margin-bottom: 0.5rem; font-family: var(--font-main); }
+
+/* Formulário (Cadastro/Contato) */
+form { max-width: 600px; margin: 0 auto; background: var(--secondary-bg); padding: 2rem; border-radius: 8px; }
+.form-group { margin-bottom: 1rem; }
+label { display: block; margin-bottom: 0.5rem; }
+input, textarea { width: 100%; padding: 0.8rem; border-radius: 4px; border: 1px solid #555; background: #222; color: #fff; }
+button[type="submit"] { background: var(--primary-color); color: #000; padding: 1rem 2rem; border: none; font-weight: bold; cursor: pointer; width: 100%; margin-top: 1rem; }
+button[type="submit"]:hover { background: #b5952f; }
+.error-msg { color: #ff6b6b; font-size: 0.85rem; margin-top: 5px; display: none; }
+
+/* FAQ */
+details { background: var(--secondary-bg); margin-bottom: 1rem; padding: 1rem; border-radius: 4px; }
+summary { cursor: pointer; font-weight: bold; color: var(--primary-color); }
+
+/* Mapa (Contatos) */
+.map-container {
+    margin-top: 3rem;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 50%; /* Proporção 2:1 */
+    position: relative;
+    height: 0;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border: 0;
+}

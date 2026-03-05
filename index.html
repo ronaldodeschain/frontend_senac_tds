@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senhor dos Anéis - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Fontes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- VLIBRAS -->
+      <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                    <div class="vw-plugin-top-wrapper"></div>
+                </div>
+          </div>
+      <!-- JS DO VLIBRAS -->
+     
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+     
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+      <!-- FIM DO VLIBRAS -->
+    <header>
+        <h1>A Terra Média</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="trabalhe-conosco.html">Trabalhe Conosco</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="carousel">
+            <div class="carousel-inner">
+                <!-- Imagens placeholder (substitua pelos caminhos reais) -->
+                <div class="carousel-item"
+                    style="background: url('https://via.placeholder.com/800x400/000/d4af37?text=O+Condado') center/cover;">
+                </div>
+                <div class="carousel-item"
+                    style="background: url('https://via.placeholder.com/800x400/000/d4af37?text=Mordor') center/cover;">
+                </div>
+                <div class="carousel-item"
+                    style="background: url('https://via.placeholder.com/800x400/000/d4af37?text=Valfenda') center/cover;">
+                </div>
+            </div>
+            <button class="carousel-btn prev">&#10094;</button>
+            <button class="carousel-btn next">&#10095;</button>
+        </section>
+
+        <section id="apresentacao">
+            <h2>Nossa Jornada</h2>
+            <div class="presentation-grid">
+                <div class="presentation-card">
+                    <h3>Missão</h3>
+                    <p>Trazer a magia da Terra Média para o mundo real, conectando fãs através de produtos autênticos e conteúdo de qualidade, mantendo vivo o legado de Tolkien.</p>
+                </div>
+                <div class="presentation-card">
+                    <h3>Objetivo</h3>
+                    <p>Ser a referência definitiva em artigos de colecionador e lore de O Senhor dos Anéis, criando uma comunidade unida como a Sociedade do Anel.</p>
+                </div>
+                <div class="presentation-card">
+                    <h3>Metas</h3>
+                    <p>Expandir nosso catálogo de relíquias, alcançar fãs em todos os cantos do mapa e garantir a satisfação de cada viajante que passa por nossas terras.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos">
+            <h2>Artefatos Lendários</h2>
+            <div class="products-grid">
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x200?text=O+Um+Anel" alt="O Um Anel">
+                    <h3>O Um Anel</h3>
+                    <p>Um anel para a todos governar.</p>
+                </article>
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x200?text=Ferroada" alt="Espada Ferroada">
+                    <h3>Ferroada</h3>
+                    <p>A espada élfica de Bilbo e Frodo.</p>
+                </article>
+                <article class="product-card">
+                    <img src="https://via.placeholder.com/250x200?text=Lembas" alt="Pão de Lembas">
+                    <h3>Pão de Lembas</h3>
+                    <p>Uma pequena mordida enche o estômago de um homem adulto.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <h3>Redes Sociais</h3>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+            </div>
+            <div class="wiremap">
+                <h3>Mapa do Site</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastro</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2023 Projeto Terra Média. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
