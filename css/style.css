@@ -85,7 +85,12 @@ footer {
 /* Produtos (Index) */
 .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
 .product-card { background: var(--secondary-bg); padding: 1rem; border-radius: 8px; text-align: center; border: 1px solid #444; }
-.product-card img { max-width: 100%; height: auto; border-radius: 4px; }
+.product-card img {
+    width: 100%;
+    height: 200px; /* Altura fixa para as imagens. Você pode ajustar este valor. */
+    object-fit: cover; /* Faz a imagem cobrir o espaço, cortando se necessário, mas sem distorcer. */
+    border-radius: 4px;
+}
 
 /* Apresentação (Index) */
 .presentation-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
